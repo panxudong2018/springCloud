@@ -13,6 +13,13 @@ spring:
     show-sql: true
     generate-ddl: true
     database: mysql
+  zipkin:
+    base-url: http://127.0.0.1:9041
+    sender:
+      type: web
+  sleuth:
+    sampler:
+      probability: 1
 
 eureka:
   client:
