@@ -1,0 +1,27 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: raspcloud-admin
+  data:
+    mongodb:
+      host: 47.101.60.23
+      port: 27017
+      database: raspcloud
+jwt:
+  secret: mySecret
+  expiration: 604800
+  tokenHeader: Authorization
+  tokenHead: Bearer
+logging:
+  file:
+    path: D:/mylog
+  config: classpath:admin-logback.xml
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8888/eureka/
+
+
